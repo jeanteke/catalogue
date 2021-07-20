@@ -1,0 +1,59 @@
+.cover-image {
+  position: relative;
+
+  button:nth-child(1) {
+    left: 40px;
+  }
+  button:nth-child(3) {
+    right: 40px;
+  }
+  >img {
+    height: 745px;
+    width: 100%;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  height: 620px;
+  margin: 40px;
+
+  img {
+    object-fit: cover;
+    width: 45%;
+  }
+}
+
+.most-wanted {
+  width: 100%;
+  text-align: center;
+  font-size: 41px;
+  font-family: HelveticaNeue-Bold;
+}
+
+.products {
+  flex-wrap: nowrap;
+  margin: 0 25px 50px 24px;
+
+  >div {
+    width: 255px;
+  }
+}
+
+.arrow-gray {
+  position: absolute;
+  top: 50%;
+  height: 113px;
+  width: 113px;
+  border: transparent;
+  background-color: #60606050;
+}
+
+.arrow {
+  height: 73px;
+  width: 36px;
+  margin: 15px;
+  border: transparent;
+  background-color: transparent;
+}

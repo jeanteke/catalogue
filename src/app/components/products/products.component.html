@@ -1,0 +1,18 @@
+
+<div class="products">
+
+  <div *ngFor="let product of products">
+    <img class="product-image" [src]="product.thumbnail" alt="" srcset="">
+
+    <div class="product-info">
+      <label>{{product.title}}</label>
+      <p>{{product.price | currency}}</p>
+      <div class="add-cart">
+        <img [src]="cartIcon">
+        <p>Agregar al carrito</p>
+      </div>
+    </div>
+    
+  </div>
+
+</div>

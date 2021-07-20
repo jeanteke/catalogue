@@ -1,0 +1,22 @@
+<div class="options">
+  <label class="title">ClothesStore</label>
+
+  <div>
+    <div class="search">
+      <input type="text" [formControl]="searchInput" placeholder="Buscar aquí producto" />
+      <button (click)="searchProducts()">
+        <img [src]="iconSearch" alt="" />
+      </button>
+    </div>
+
+    <div class="settings">
+      <img [src]="iconCart" alt="" />
+      <img [src]="iconUser" alt="" />
+      <button>Iniciar sesión</button>
+    </div>
+  </div>
+</div>
+
+<div class="menu">
+  <label *ngFor="let item of items; index as i" [ngClass]="{ 'border-white': i != 0 }">{{ item }}</label>
+</div>

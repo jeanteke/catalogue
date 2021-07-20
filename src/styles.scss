@@ -1,1 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Bebas;
+  src: url(./assets/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: HelveticaNeue-Bold;
+  src: url(./assets/fonts/HelveticaNeue-Bold.ttf);
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(./assets/fonts/Helvetica.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 50px 50px 50px;
+
+  >div {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 662px;
+    margin: 15px 15px;
+    border: 1px #E6E6E6 solid;
+  }
+}
+
+.product-image {
+  object-fit: contain;
+  height: 55%;
+  width: 90%;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 45%;
+  background-color: #F4F4F4;
+  box-sizing: border-box;
+  padding: 20px;
+
+  label {
+    font-size: 23px;
+    font-family: Helvetica;
+  }
+
+  >p {
+    color: #5B17AA;
+    font-size: 26px;
+    font-family: HelveticaNeue-Bold;
+  }
+}
+
+.add-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  cursor: pointer;
+
+  img {
+    height: 17px;
+    width: 17px;
+    margin: 10px;
+  }
+
+  p {
+    font-family: Helvetica;
+    color: white;
+    font-size: 19px;
+  }
+}
+
+.add-cart:active {
+  background-color: rgb(39, 39, 39);
+}

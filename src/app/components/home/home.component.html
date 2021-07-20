@@ -1,0 +1,48 @@
+<div class="cover-image">
+  <button class="arrow-gray">
+    <img [src]="arrowGLeftIcon" alt="">
+  </button>
+
+  <img [src]="coverImage" alt="" srcset="">
+
+  <button class="arrow-gray">
+    <img [src]="arrowGRightIcon" alt="">
+  </button>
+</div>
+
+<div class="container">
+  <img [src]="kidsImage" alt="" srcset="">
+  <img [src]="protectionImage" alt="" srcset="">
+</div>
+
+<div class="most-wanted">
+  <label>PRODUCTOS MÁS BUSCADOS</label>
+</div>
+
+<div class="products">
+
+  <button class="arrow">
+    <img [src]="arrowLeftIcon" alt="">
+  </button>
+
+  <div *ngFor="let product of products">
+    <img class="product-image" [src]="product.thumbnail" alt="" srcset="">
+
+    <div class="product-info">
+      <label>{{product.title}}</label>
+      <p>{{product.price | currency}}</p>
+      <div class="add-cart">
+        <img [src]="cartIcon">
+        <p>Agregar al carrito</p>
+      </div>
+    </div>
+    
+  </div>
+
+  <button class="arrow">
+    <img [src]="arrowRightIcon" alt="">
+  </button>
+</div>
+
+
+<app-footer></app-footer>
